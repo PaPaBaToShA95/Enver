@@ -1,11 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Enver</title>
 </head>
+
 <body>
-    
+    <header class="header container">
+        <div class="logo">
+            <a href="#" class="logo__link">
+                <img src="img/logo_header.svg" alt="logo" class="logo__img">
+        </div>
+        <div class="nav__bar">
+            <nav class="nav">
+                <ul class="nav__links">
+                    <li class="nav__list"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">Services</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">Our Project</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contact__us">
+            <a href="#" class="contact__us__link">Contact Us</a>
+        </div>
+    </header>
+    <main class="container">
+        <section class="our__service">
+            <div class="our__text">
+                <div class="our__title">
+                    Build Your Awesome Platform
+                </div>
+                <div class="our__discription">
+                    Enver studio is a digital studio that offers several services such as UI/UX Design to developers, we
+                    will provide the best service for those of you who use our services.
+                </div>
+                <div class="our__btn">
+                    <a href="#" class="our__btn__link">Our Service<img src="img/arrow-right-up.svg"> </a>
+                </div>
+            </div>
+            <div class="our__img">
+                <img src="img/img_man.png" alt="img_man" class="our__img">
+            </div>
+        </section>
+        <section class="video">
+            <div class="video__text">
+                <div class="video__title">
+                    Why Enver Is The Best Choice?
+
+                </div>
+                <div class="video__discription">
+                    Watch this one minute video so you understand why you should use our services!
+                </div>
+            </div>
+            <div class="video__video">
+                <video width="1200" height="670" controls>
+                    <source src="video/video.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+        </section>
+        <section class="services">
+            <div class="service__title">
+                The Service We Provide For You
+            </div>
+            <div class="service__table">
+                <div class="service__box">
+                    <img src="img/dev.svg" alt="Development" class="service__img">
+                    <div class="services__title">
+                        Development
+                    </div>
+                    <div class="service__description">
+                        Create a platform with the best and coolest quality from us.
+                    </div>
+                </div>
+                <div class="service__box">
+                    <img src="img/ui.svg" alt="UI/UX Designer" class="service__img">
+                    <div class="services__title">
+                        UI/UX Designer
+                    </div>
+                    <div class="service__description">
+                        We provide UI/UX Design services, and of course with the best quality
+                    </div>
+                </div>
+                <div class="service__box">
+                    <img src="img/grap.svg" alt="Graphik Designer" class="service__img">
+                    <div class="services__title">
+                        Graphik Designer
+                    </div>
+                    <div class="service__description">
+                        We provide Graphic Design services, with the best designers
+                    </div>
+                </div>
+                <div class="service__box">
+                    <img src="img/mot.svg" alt="Motion Graphik" class="service__img">
+                    <div class="services__title">
+                        Motion Graphik
+                    </div>
+                    <div class="service__description">
+                        Create a platform with the best and coolest quality from us.
+                    </div>
+                </div>
+                <div class="service__box">
+                    <img src="img/phot.svg" alt="Photography" class="service__img">
+                    <div class="services__title">
+                        Photography
+                    </div>
+                    <div class="service__description">
+                        We provide Photography services, and of course with the best quality
+                    </div>
+                </div>
+                <div class="service__box">
+                    <img src="img/vid.svg" alt="Videography" class="service__img">
+                    <div class="services__title">
+                        Videography
+                    </div>
+                    <div class="service__description">
+                        Create a platform with the best and coolest quality from us.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our__portfolio">
+            <div class="out__title">
+                Our Awesome Portofolio
+            </div>
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                    <img src="img/1.png" alt="img" draggable="false">
+                    <img src="img/2.png" alt="img" draggable="false">
+                    <img src="img/3.png" alt="img" draggable="false">
+                    <img src="img/1.png" alt="img" draggable="false">
+                    <img src="img/2.png" alt="img" draggable="false">
+                    <img src="img/3.png" alt="img" draggable="false">
+                    <img src="img/1.png" alt="img" draggable="false">
+                    <img src="img/2.png" alt="img" draggable="false">
+                    <img src="img/3.png" alt="img" draggable="false">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact__title">
+                Contact us for the service you want to use
+            </div>
+            <div class="contact__btn">
+                <a href="#" class="contact__btn__link">Contact Us</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <div class="fotter__logo">
+            <img src="img/logo_header.svg" alt="logo" class="footer__logo">
+        </div>
+        <div class="footer__nav">
+            <nav class="footer__nav__nav">
+                <ul class="footer__nav__links">
+                    <li class="footer__nav__list"><a href="#">Support</a></li>
+                    <li class="footer__nav__list"><a href="#">Policy</a></li>
+                    <li class="footer__nav__list"><a href="#">Conditions</a></li>
+               
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__copy">
+            © 2020 Enver, All Rights Reserved
+        </div>
+    </footer>
 </body>
+
 </html>
