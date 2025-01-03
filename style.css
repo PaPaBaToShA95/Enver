@@ -342,7 +342,7 @@ body {
 @media screen and (max-width: 1200px) {
   body {
     background-image: url("img/backgroundmobile.png");
-    background-size: 100%;
+    background-size: contain;
   }
   .container {
     width: 95%;
