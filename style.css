@@ -1,3 +1,6 @@
+html {
+  box-sizing: border-box;
+}
 body {
   background-image: url("img/background.png");
   background-color: #000000;
@@ -38,6 +41,9 @@ body {
   font-family: "Nunito Sans", serif;
   font-size: 18px;
 }
+.nav__link:hover {
+  color: #5454d4;
+}
 
 .contact__us__link {
   text-wrap: nowrap;
@@ -48,6 +54,13 @@ body {
   border-radius: 5px;
   font-family: "Nunito Sans", serif;
   font-size: 16px;
+  background-image: linear-gradient(transparent 50%, #5454d4 50%);
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+  transition: 0.2s;
+}
+.contact__us__link:hover {
+  background-position: 0 100%;
 }
 .our__title {
   margin-top: 148px;
@@ -161,6 +174,7 @@ body {
   opacity: 70%;
 }
 .out__title {
+  margin-top: 150px;
   font-family: "Nunito Sans", serif;
   font-size: 58px;
   font-weight: 800;
@@ -255,7 +269,7 @@ body {
 
 @media screen and (max-width: 550px) {
   .carousel img {
-    width: 90%;
+    width: 90.8%;
   }
 }
 .contact {
@@ -285,12 +299,142 @@ body {
   align-items: center;
   border-radius: 4px;
   justify-content: center;
+  background-image: linear-gradient(transparent 50%, #ffffff 50%);
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+  transition: 0.2s;
+}
+
+.contact__btn__link:hover {
+  background-position: 0 100%;
+  color: #5454d4;
 }
 .footer {
-  margin-top: 70px;
+  margin-bottom: 100px;
+  margin-top: 170px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer__nav__nav {
   display: flex;
+}
+.footer__nav__links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.footer__nav__list {
+  text-decoration: none;
+  text-wrap: nowrap;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 70%;
+  font-family: "Nunito Sans", serif;
+  font-size: 18px;
+}
+.footer__copy {
+  color: #ffffff;
+  opacity: 70%;
+  font-family: "Nunito Sans", serif;
+  font-size: 16px;
+}
+@media screen and (max-width: 1200px) {
+  body {
+    background-image: url("img/backgroundmobile.png");
+    background-size: 100%;
+  }
+  .container {
+    width: 95%;
+  }
+  .our__title {
+    width: 90%;
+    font-size: 42px;
+    margin-top: 48px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+  .our__text {
+    width: 90%;
+  }
+  .our__discription {
+    width: 100%;
+  }
+  .our__service {
+    flex-wrap: wrap;
+  }
+  .nav__bar {
+    display: none;
+  }
+  .contact__us {
+    display: none;
+  }
+  .our__img {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 55px;
+  }
+  .video {
+    margin-top: 140px;
+    width: 100%;
+    height: auto;
+  }
+  .video__video {
+    width: 100%;
+    margin: 50px auto 0;
+  }
+  .video__text {
+    flex-wrap: wrap;
+  }
+  .videomp4 {
+    width: 100%;
+    height: auto;
+  }
+  .video__title {
+    font-size: 45px;
+    line-height: 80px;
+  }
+  .video__discription {
+    font-size: 16px;
+    margin-top: 30px;
+    line-height: 40px;
+  }
+  .service__title {
+    text-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    font-size: 43px;
+    line-height: 47px;
+  }
+  .service__table {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 2042px;
+  }
+  .our__portfolio {
+    margin-top: 210px;
+  }
+  .out__title {
+    text-wrap: wrap;
+  }
+  .contact {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 330px;
+  }
+  .contact__title {
+    font-size: 44px;
+  }
+  .contact__btn {
+    margin-top: 50px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer__nav__links {
+    flex-direction: column;
+    align-items: center;
+  }
 }
